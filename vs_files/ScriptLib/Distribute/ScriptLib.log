@@ -1,0 +1,8 @@
+﻿  StdAfx.cpp
+  PythonDebugModule.cpp
+  PythonLauncher.cpp
+  PythonMarshal.cpp
+  PythonUtils.cpp
+  Resource.cpp
+  Generating Code...
+  ScriptLib.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\vs_files\ScriptLib\Distribute\ScriptLib.lib

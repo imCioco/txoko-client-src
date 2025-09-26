@@ -1,0 +1,6 @@
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\connection_win.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\connection_win.obj
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\discord_register_win.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\discord_register_win.obj
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\discord_rpc.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\discord_rpc.obj
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\dllmain.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\dllmain.obj
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\rpc_connection.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\rpc_connection.obj
+D:\_m2work\Server Client TMP4\ClientVS22\source\Discord\serialization.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\Discord\Distribute\serialization.obj

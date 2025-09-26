@@ -1,0 +1,17 @@
+﻿  StdAfx.cpp
+  LODController.cpp
+  Material.cpp
+  Mesh.cpp
+  Model.cpp
+  ModelInstance.cpp
+  ModelInstanceCollisionDetection.cpp
+  ModelInstanceModel.cpp
+  ModelInstanceMotion.cpp
+  ModelInstanceRender.cpp
+  ModelInstanceUpdate.cpp
+  Motion.cpp
+  Thing.cpp
+  ThingInstance.cpp
+  Util.cpp
+  Generating Code...
+  EterGrnLib.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterGrnLib\Distribute\EterGrnLib.lib

@@ -1,0 +1,15 @@
+# Ignore archives
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ignore binary build
+binary/
+build/
+Debug/
+Release/
+
+extern/
+.vs/

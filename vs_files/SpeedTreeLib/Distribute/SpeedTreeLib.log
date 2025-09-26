@@ -1,0 +1,15 @@
+﻿  StdAfx.cpp
+  BoundaryShapeManager.cpp
+  SpeedGrassRT.cpp
+  SpeedGrassWrapper.cpp
+  SpeedTreeForest.cpp
+  SpeedTreeForestDirectX8.cpp
+  SpeedTreeWrapper.cpp
+D:\_m2work\Server Client TMP4\ClientVS22\source\SpeedTreeLib\VertexShaders.h(171,23): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'LPVOID'
+  (compiling source file '/source/SpeedTreeLib/SpeedTreeForestDirectX8.cpp')
+  
+D:\_m2work\Server Client TMP4\ClientVS22\source\SpeedTreeLib\VertexShaders.h(171,23): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'LPVOID'
+  (compiling source file '/source/SpeedTreeLib/SpeedTreeWrapper.cpp')
+  
+  Generating Code...
+  SpeedTreeLib.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\vs_files\SpeedTreeLib\Distribute\SpeedTreeLib.lib
