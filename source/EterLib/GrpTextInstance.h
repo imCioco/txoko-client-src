@@ -3,6 +3,7 @@
 
 #include "Pool.h"
 #include "GrpText.h"
+#include "GrpImageInstance.h"
 
 class CGraphicTextInstance
 {
@@ -32,7 +33,7 @@ class CGraphicTextInstance
 		virtual ~CGraphicTextInstance();
 
 		void Destroy();
-		
+
 		void Update();
 		void Render(RECT * pClipRect = NULL);
 
@@ -83,6 +84,16 @@ class CGraphicTextInstance
 
 			SHyperlink() : sx(0), ex(0) { }
 		};
+        struct SEmoji
+        {
+            short x;
+            CGraphicImageInstance * pInstance;
+
+            SEmoji() : x(0)
+            {
+                pInstance = NULL;
+            }
+        };
 
 	protected:
 		DWORD m_dwTextColor;
@@ -112,11 +123,12 @@ class CGraphicTextInstance
 	private:
 		bool m_isUpdate;
 		bool m_isUpdateFontTexture;
-		
+
 		CGraphicText::TRef m_roText;
 		CGraphicFontTexture::TPCharacterInfomationVector m_pCharInfoVector;
 		std::vector<DWORD> m_dwColorInfoVector;
 		std::vector<SHyperlink> m_hyperlinkVector;
+		std::vector<SEmoji> m_emojiVector;
 
 	public:
 		static void CreateSystem(UINT uCapacity);

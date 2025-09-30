@@ -1,8 +1,2 @@
-﻿  StdAfx.cpp
-  PythonDebugModule.cpp
-  PythonLauncher.cpp
-  PythonMarshal.cpp
-  PythonUtils.cpp
-  Resource.cpp
-  Generating Code...
+﻿  Resource.cpp
   ScriptLib.vcxproj -> D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\ScriptLib\Distribute\ScriptLib.lib

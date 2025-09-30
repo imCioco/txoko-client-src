@@ -6,6 +6,8 @@
 #include "../EterLocale/StringCodec.h"
 #include "../EterBase/Utils.h"
 #include "../EterLocale/Arabic.h"
+#include "ResourceManager.h"
+#include <stdio.h>
 
 extern DWORD GetDefaultCodePage();
 
@@ -32,7 +34,7 @@ int CGraphicTextInstance::Hyperlink_GetText(char* buf, int len)
 
 	int codePage = GetDefaultCodePage();
 
-	return Ymir_WideCharToMultiByte(codePage, 0, gs_hyperlinkText.c_str(), gs_hyperlinkText.length(), buf, len, NULL, NULL);	
+	return Ymir_WideCharToMultiByte(codePage, 0, gs_hyperlinkText.c_str(), gs_hyperlinkText.length(), buf, len, NULL, NULL);
 }
 
 int CGraphicTextInstance::__DrawCharacter(CGraphicFontTexture * pFontTexture, WORD codePage, wchar_t text, DWORD dwColor)
@@ -48,7 +50,7 @@ int CGraphicTextInstance::__DrawCharacter(CGraphicFontTexture * pFontTexture, WO
 		m_textHeight = max(pInsCharInfo->height, m_textHeight);
 		return pInsCharInfo->advance;
 	}
-	
+
 	return 0;
 }
 
@@ -85,10 +87,10 @@ bool isNumberic(const char chr)
 
 bool IsValidToken(const char* iter)
 {
-	return	iter[0]=='@' && 
-		isNumberic(iter[1]) && 
-		isNumberic(iter[2]) && 
-		isNumberic(iter[3]) && 
+	return	iter[0]=='@' &&
+		isNumberic(iter[1]) &&
+		isNumberic(iter[2]) &&
+		isNumberic(iter[3]) &&
 		isNumberic(iter[4]);
 }
 
@@ -121,12 +123,12 @@ int ReadToken(const char* token)
 
 void CGraphicTextInstance::Update()
 {
-	if (m_isUpdate) // ¹®ÀÚ¿­ÀÌ ¹Ù²î¾úÀ» ¶§¸¸ ¾÷µ¥ÀÌÆ® ÇÑ´Ù.
+	if (m_isUpdate) // ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ñ´ï¿½.
 		return;
 
 	if (m_roText.IsNull())
 	{
-		Tracef("CGraphicTextInstance::Update - ÆùÆ®°¡ ¼³Á¤µÇÁö ¾Ê¾Ò½À´Ï´Ù\n");
+		Tracef("CGraphicTextInstance::Update - ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾Ò½ï¿½ï¿½Ï´ï¿½\n");
 		return;
 	}
 
@@ -139,20 +141,34 @@ void CGraphicTextInstance::Update()
 
 	UINT defCodePage = GetDefaultCodePage();
 
-	UINT dataCodePage = defCodePage; // ¾Æ¶ø ¹× º£Æ®³² ³»ºÎ µ¥ÀÌÅÍ¸¦ UTF8 À» »ç¿ëÇÏ·Á ÇßÀ¸³ª ½ÇÆÐ
-		
+	UINT dataCodePage = defCodePage; // ï¿½Æ¶ï¿½ ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ UTF8 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
 	CGraphicFontTexture::TCharacterInfomation* pSpaceInfo = pFontTexture->GetCharacterInfomation(dataCodePage, ' ');
 
 	int spaceHeight = pSpaceInfo ? pSpaceInfo->height : 12;
-	
+
 	m_pCharInfoVector.clear();
 	m_dwColorInfoVector.clear();
 	m_hyperlinkVector.clear();
 
+   if (m_emojiVector.size() != 0)
+    {
+        for (std::vector<SEmoji>::iterator itor = m_emojiVector.begin(); itor != m_emojiVector.end(); ++itor)
+        {
+            SEmoji & rEmo = *itor;
+            if (rEmo.pInstance)
+            {
+                CGraphicImageInstance::Delete(rEmo.pInstance);
+                rEmo.pInstance = NULL;
+            }
+        }
+    }
+    m_emojiVector.clear();
+
 	m_textWidth = 0;
 	m_textHeight = spaceHeight;
 
-	/* wstring begin */ 	
+	/* wstring begin */
 
 	const char* begin = m_stText.c_str();
 	const char* end = begin + m_stText.length();
@@ -173,8 +189,8 @@ void CGraphicTextInstance::Update()
 		{
 			for(int i=0; i<wTextLen; ++i)
 				__DrawCharacter(pFontTexture, dataCodePage, '*', dwColor);
-		} 
-		else 
+		}
+		else
 		{
 			if (defCodePage == CP_ARABIC) // ARABIC
 			{
@@ -185,21 +201,21 @@ void CGraphicTextInstance::Update()
 				bool isEnglish = true;
 				int nEnglishBase = wArabicTextLen - 1;
 
-				//<<ÇÏÀÌÆÛ ¸µÅ©>>
+				//<<ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©>>
 				int x = 0;
 
-				int len;				
+				int len;
 				int hyperlinkStep = 0;
 				SHyperlink kHyperlink;
 				std::wstring hyperlinkBuffer;
 				int no_hyperlink = 0;
 
-				// ½Éº¼·Î ³¡³ª¸é ¾Æ¶ø¾î ¸ðµå·Î ½ÃÀÛÇØ¾ßÇÑ´Ù
+				// ï¿½Éºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½Ñ´ï¿½
 				if (Arabic_IsInSymbol(wArabicText[wArabicTextLen - 1]))
 				{
 					isEnglish = false;
 				}
-				
+
 				int i = 0;
 				for (i = wArabicTextLen - 1 ; i >= 0; --i)
 				{
@@ -208,24 +224,24 @@ void CGraphicTextInstance::Update()
 					if (isEnglish)
 					{
 
-						// <<½Éº¼ÀÇ °æ¿ì (ex. ±âÈ£, °ø¹é)>> -> ¿µ¾î ¸ðµå À¯Áö.
-						//		<<(½Éº¼ÀÌ ¾Æ´Ñ °Íµé : ¼ýÀÚ, ¿µ¾î, ¾Æ¶ø¾î)>>
-						//  (1) ¸Ç ¾ÕÀÇ ½Éº¼ or
-						//	(2) 
-						//		1) ¾Õ ±ÛÀÚ°¡ ¾Æ¶ø¾î ¾Æ´Ô &&
-						//		2) µÞ ±ÛÀÚ°¡ ¾Æ¶ø¾î ¾Æ´Ô &&
-						//		3) µÞ ±ÛÀÚ°¡ ½Éº¼'|'ÀÌ ¾Æ´Ô &&
+						// <<ï¿½Éºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (ex. ï¿½ï¿½È£, ï¿½ï¿½ï¿½ï¿½)>> -> ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+						//		<<(ï¿½Éºï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½Íµï¿½ : ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½Æ¶ï¿½ï¿½ï¿½)>>
+						//  (1) ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Éºï¿½ or
+						//	(2)
+						//		1) ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ &&
+						//		2) ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ &&
+						//		3) ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Éºï¿½'|'ï¿½ï¿½ ï¿½Æ´ï¿½ &&
 						//		or
-						//	(3) ÇöÀç ½Éº¼ÀÌ '|'
-						// <<¾Æ¶ø¾î ¸ðµå·Î ³Ñ¾î°¡´Â °æ¿ì : ½Éº¼¿¡¼­.>>
-						//	1) ¾Õ±ÛÀÚ ¾Æ¶ø¾î
-						//	2) µÞ±ÛÀÚ ¾Æ¶ø¾î
+						//	(3) ï¿½ï¿½ï¿½ï¿½ ï¿½Éºï¿½ï¿½ï¿½ '|'
+						// <<ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ : ï¿½Éºï¿½ï¿½ï¿½ï¿½ï¿½.>>
+						//	1) ï¿½Õ±ï¿½ï¿½ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½
+						//	2) ï¿½Þ±ï¿½ï¿½ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½
 						//
 						//
 						if (Arabic_IsInSymbol(wArabicChar) && (
 								(i == 0) ||
-								(i > 0 && 
-									!(Arabic_HasPresentation(wArabicText, i - 1) || Arabic_IsInPresentation(wArabicText[i + 1]))  && //¾Õ±ÛÀÚ, µÞ±ÛÀÚ°¡ ¾Æ¶ø¾î ¾Æ´Ô.
+								(i > 0 &&
+									!(Arabic_HasPresentation(wArabicText, i - 1) || Arabic_IsInPresentation(wArabicText[i + 1]))  && //ï¿½Õ±ï¿½ï¿½ï¿½, ï¿½Þ±ï¿½ï¿½Ú°ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½.
 									wArabicText[i+1] != '|'
 								) ||
 								wArabicText[i] == '|'
@@ -234,10 +250,10 @@ void CGraphicTextInstance::Update()
 							// pass
 							int temptest = 1;
 						}
-						// (1)¾Æ¶ø¾îÀÌ°Å³ª (2)¾Æ¶ø¾î ´ÙÀ½ÀÇ ½Éº¼ÀÌ¶ó¸é ¾Æ¶ø¾î ¸ðµå ÀüÈ¯
+						// (1)ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ì°Å³ï¿½ (2)ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Éºï¿½ï¿½Ì¶ï¿½ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 						else if (Arabic_IsInPresentation(wArabicChar) || Arabic_IsInSymbol(wArabicChar))
 						{
-							//±× Àü±îÁöÀÇ ¿µ¾î¸¦ ±×¸°´Ù.
+							//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î¸¦ ï¿½×¸ï¿½ï¿½ï¿½.
 							for (int e = i + 1; e <= nEnglishBase;) {
 								int ret = GetTextTag(&wArabicText[e], wArabicTextLen - e, len, hyperlinkBuffer);
 
@@ -250,8 +266,8 @@ void CGraphicTextInstance::Update()
 										int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wArabicText[e], dwColor);
 										kHyperlink.ex += charWidth;
 										//x += charWidth;
-										
-										//±âÁ¸ Ãß°¡ÇÑ ÇÏÀÌÆÛ¸µÅ©ÀÇ ÁÂÇ¥ ¼öÁ¤.
+
+										//ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½Å©ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½.
 										for (int j = 1; j <= no_hyperlink; j++)
 										{
 											if(m_hyperlinkVector.size() < j)
@@ -279,7 +295,7 @@ void CGraphicTextInstance::Update()
 										if (hyperlinkStep == 1)
 										{
 											++hyperlinkStep;
-											kHyperlink.ex = kHyperlink.sx = 0; // ½ÇÁ¦ ÅØ½ºÆ®°¡ ½ÃÀÛµÇ´Â À§Ä¡
+											kHyperlink.ex = kHyperlink.sx = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ÛµÇ´ï¿½ ï¿½ï¿½Ä¡
 										}
 										else
 										{
@@ -289,7 +305,7 @@ void CGraphicTextInstance::Update()
 
 
 											hyperlinkStep = 0;
-											hyperlinkBuffer = L"";						
+											hyperlinkBuffer = L"";
 										}
 									}
 								}
@@ -298,8 +314,8 @@ void CGraphicTextInstance::Update()
 
 							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, Arabic_ConvSymbol(wArabicText[i]), dwColor);
 							kHyperlink.ex += charWidth;
-							
-							//±âÁ¸ Ãß°¡ÇÑ ÇÏÀÌÆÛ¸µÅ©ÀÇ ÁÂÇ¥ ¼öÁ¤.
+
+							//ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½Å©ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½.
 							for (int j = 1; j <= no_hyperlink; j++)
 							{
 								if(m_hyperlinkVector.size() < j)
@@ -313,16 +329,16 @@ void CGraphicTextInstance::Update()
 							isEnglish = false;
 						}
 					}
-					else //[[[¾Æ¶ø¾î ¸ðµå]]]
+					else //[[[ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½]]]
 					{
-						// ¾Æ¶ø¾îÀÌ°Å³ª ¾Æ¶ø¾î Ãâ·ÂÁß ³ª¿À´Â ½Éº¼ÀÌ¶ó¸é
+						// ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ì°Å³ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Éºï¿½ï¿½Ì¶ï¿½ï¿½
 						if (Arabic_IsInPresentation(wArabicChar) || Arabic_IsInSymbol(wArabicChar))
 						{
 							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, Arabic_ConvSymbol(wArabicText[i]), dwColor);
 							kHyperlink.ex += charWidth;
 							x += charWidth;
-							
-							//±âÁ¸ Ãß°¡ÇÑ ÇÏÀÌÆÛ¸µÅ©ÀÇ ÁÂÇ¥ ¼öÁ¤.
+
+							//ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½Å©ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½.
 							for (int j = 1; j <= no_hyperlink; j++)
 							{
 								if(m_hyperlinkVector.size() < j)
@@ -333,7 +349,7 @@ void CGraphicTextInstance::Update()
 								tempLink.sx += charWidth;
 							}
 						}
-						else //¿µ¾îÀÌ°Å³ª, ¿µ¾î ´ÙÀ½¿¡ ³ª¿À´Â ½Éº¼ÀÌ¶ó¸é,
+						else //ï¿½ï¿½ï¿½ï¿½ï¿½Ì°Å³ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Éºï¿½ï¿½Ì¶ï¿½ï¿½,
 						{
 							nEnglishBase = i;
 							isEnglish = true;
@@ -355,7 +371,7 @@ void CGraphicTextInstance::Update()
 								int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wArabicText[e], dwColor);
 								kHyperlink.ex += charWidth;
 
-								//±âÁ¸ Ãß°¡ÇÑ ÇÏÀÌÆÛ¸µÅ©ÀÇ ÁÂÇ¥ ¼öÁ¤.
+								//ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¸ï¿½Å©ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½.
 								for (int j = 1; j <= no_hyperlink; j++)
 								{
 									if(m_hyperlinkVector.size() < j)
@@ -383,7 +399,7 @@ void CGraphicTextInstance::Update()
 								if (hyperlinkStep == 1)
 								{
 									++hyperlinkStep;
-									kHyperlink.ex = kHyperlink.sx = 0; // ½ÇÁ¦ ÅØ½ºÆ®°¡ ½ÃÀÛµÇ´Â À§Ä¡
+									kHyperlink.ex = kHyperlink.sx = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ÛµÇ´ï¿½ ï¿½ï¿½Ä¡
 								}
 								else
 								{
@@ -392,7 +408,7 @@ void CGraphicTextInstance::Update()
 									no_hyperlink++;
 
 									hyperlinkStep = 0;
-									hyperlinkBuffer = L"";						
+									hyperlinkBuffer = L"";
 								}
 							}
 						}
@@ -401,13 +417,16 @@ void CGraphicTextInstance::Update()
 
 				}
 			}
-			else	// ¾Æ¶ø¿Ü ´Ù¸¥ Áö¿ª.
+			else	// ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½.
 			{
 				int x = 0;
-				int len;				
+				int len;
 				int hyperlinkStep = 0;
 				SHyperlink kHyperlink;
 				std::wstring hyperlinkBuffer;
+                SEmoji kEmoji;
+                int emojiStep = 0;
+                std::wstring emojiBuffer;
 
 				for (int i = 0; i < wTextLen; )
 				{
@@ -415,8 +434,10 @@ void CGraphicTextInstance::Update()
 
 					if (ret == TEXT_TAG_PLAIN || ret == TEXT_TAG_TAG)
 					{
-						if (hyperlinkStep == 1)
-							hyperlinkBuffer.append(1, wText[i]);
+                        if (hyperlinkStep == 1)
+                            hyperlinkBuffer.append(1, wText[i]);
+                        else if (emojiStep == 1)
+                            emojiBuffer.append(1, wText[i]);
 						else
 						{
 							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wText[i], dwColor);
@@ -440,7 +461,7 @@ void CGraphicTextInstance::Update()
 							if (hyperlinkStep == 1)
 							{
 								++hyperlinkStep;
-								kHyperlink.ex = kHyperlink.sx = x; // ½ÇÁ¦ ÅØ½ºÆ®°¡ ½ÃÀÛµÇ´Â À§Ä¡
+								kHyperlink.ex = kHyperlink.sx = x; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ÛµÇ´ï¿½ ï¿½ï¿½Ä¡
 							}
 							else
 							{
@@ -448,9 +469,39 @@ void CGraphicTextInstance::Update()
 								m_hyperlinkVector.push_back(kHyperlink);
 
 								hyperlinkStep = 0;
-								hyperlinkBuffer = L"";						
+								hyperlinkBuffer = L"";
 							}
 						}
+                       else if (ret == TEXT_TAG_EMOJI_START)
+                        {
+                            emojiStep = 1;
+                            emojiBuffer = L"";
+                        }
+                        else if (ret == TEXT_TAG_EMOJI_END)
+                        {
+                            kEmoji.x = x;
+
+                            char retBuf[1024];
+                            int retLen = Ymir_WideCharToMultiByte(GetDefaultCodePage(), 0, emojiBuffer.c_str(), emojiBuffer.length(), retBuf, sizeof(retBuf) - 1, NULL, NULL);
+                            retBuf[retLen] = '\0';
+
+                            char szPath[255];
+                            _snprintf(szPath, sizeof(szPath), "icon/%s.tga", retBuf);
+                            if (CResourceManager::Instance().IsFileExist(szPath))
+                            {
+                                CGraphicImage * pImage = (CGraphicImage *)CResourceManager::Instance().GetResourcePointer(szPath);
+                                kEmoji.pInstance = CGraphicImageInstance::New();
+                                kEmoji.pInstance->SetImagePointer(pImage);
+                                m_emojiVector.push_back(kEmoji);
+                                memset(&kEmoji, 0, sizeof(SEmoji));
+                                for (int i = 0; i < pImage->GetWidth() / (pSpaceInfo->width-1); ++i)
+                                    x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+                                if (pImage->GetWidth() % (pSpaceInfo->width - 1) > 1)
+                                    x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+                            }
+                            emojiStep = 0;
+                            emojiBuffer = L"";
+                        }
 					}
 					i += len;
 				}
@@ -458,10 +509,10 @@ void CGraphicTextInstance::Update()
 		}
 
 		if (token < end)
-		{			
-			int newCodePage = ReadToken(token);			
-			dataCodePage = newCodePage;	// ¾Æ¶ø ¹× º£Æ®³² ³»ºÎ µ¥ÀÌÅÍ¸¦ UTF8 À» »ç¿ëÇÏ·Á ÇßÀ¸³ª ½ÇÆÐ
-			begin = token + 5;			
+		{
+			int newCodePage = ReadToken(token);
+			dataCodePage = newCodePage;	// ï¿½Æ¶ï¿½ ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ UTF8 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			begin = token + 5;
 		}
 		else
 		{
@@ -477,7 +528,7 @@ void CGraphicTextInstance::Update()
 void CGraphicTextInstance::Render(RECT * pClipRect)
 {
 	if (!m_isUpdate)
-		return;	
+		return;
 
 	CGraphicText* pkText=m_roText.GetPointer();
 	if (!pkText)
@@ -502,11 +553,11 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 			case HORIZONTAL_ALIGN_CENTER:
 				fStanX -= float(m_textWidth / 2);
-				break;	
+				break;
 		}
 	}
 	else
-	{	
+	{
 		switch (m_hAlign)
 		{
 			case HORIZONTAL_ALIGN_RIGHT:
@@ -515,7 +566,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 			case HORIZONTAL_ALIGN_CENTER:
 				fStanX -= float(m_textWidth / 2);
-				break;	
+				break;
 		}
 	}
 
@@ -568,9 +619,9 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 		akVertex[2].z=m_v3Position.z;
 		akVertex[3].z=m_v3Position.z;
 
-		CGraphicFontTexture::TCharacterInfomation* pCurCharInfo;		
+		CGraphicFontTexture::TCharacterInfomation* pCurCharInfo;
 
-		// Å×µÎ¸®
+		// ï¿½×µÎ¸ï¿½
 		if (m_isOutline)
 		{
 			fCurX=fStanX;
@@ -586,7 +637,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 				fFontHeight=float(pCurCharInfo->height);
 				fFontAdvance=float(pCurCharInfo->advance);
 
-				// NOTE : ÆùÆ® Ãâ·Â¿¡ Width Á¦ÇÑÀ» µÓ´Ï´Ù. - [levites]
+				// NOTE : ï¿½ï¿½Æ® ï¿½ï¿½Â¿ï¿½ Width ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ó´Ï´ï¿½. - [levites]
 				if ((fCurX+fFontWidth)-m_v3Position.x > m_fLimitWidth)
 				{
 					if (m_isMultiLine)
@@ -628,25 +679,25 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 				akVertex[3].color = akVertex[2].color = akVertex[1].color = akVertex[0].color = m_dwOutLineColor;
 
-				
+
 				float feather = 0.0f; // m_fFontFeather
-				
+
 				akVertex[0].y=fFontSy-feather;
 				akVertex[1].y=fFontEy+feather;
 				akVertex[2].y=fFontSy-feather;
 				akVertex[3].y=fFontEy+feather;
 
-				// ¿Þ
+				// ï¿½ï¿½
 				akVertex[0].x=fFontSx-fFontHalfWeight-feather;
 				akVertex[1].x=fFontSx-fFontHalfWeight-feather;
 				akVertex[2].x=fFontEx-fFontHalfWeight+feather;
 				akVertex[3].x=fFontEx-fFontHalfWeight+feather;
-				
+
 				if (CGraphicBase::SetPDTStream((SPDTVertex*)akVertex, 4))
 					STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
-				
 
-				// ¿À¸¥
+
+				// ï¿½ï¿½ï¿½ï¿½
 				akVertex[0].x=fFontSx+fFontHalfWeight-feather;
 				akVertex[1].x=fFontSx+fFontHalfWeight-feather;
 				akVertex[2].x=fFontEx+fFontHalfWeight+feather;
@@ -654,13 +705,13 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 				if (CGraphicBase::SetPDTStream((SPDTVertex*)akVertex, 4))
 					STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
-				
+
 				akVertex[0].x=fFontSx-feather;
 				akVertex[1].x=fFontSx-feather;
 				akVertex[2].x=fFontEx+feather;
 				akVertex[3].x=fFontEx+feather;
-				
-				// À§
+
+				// ï¿½ï¿½
 				akVertex[0].y=fFontSy-fFontHalfWeight-feather;
 				akVertex[1].y=fFontEy-fFontHalfWeight+feather;
 				akVertex[2].y=fFontSy-fFontHalfWeight-feather;
@@ -669,8 +720,8 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 				// 20041216.myevan.DrawPrimitiveUP
 				if (CGraphicBase::SetPDTStream((SPDTVertex*)akVertex, 4))
 					STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
-				
-				// ¾Æ·¡
+
+				// ï¿½Æ·ï¿½
 				akVertex[0].y=fFontSy+fFontHalfWeight-feather;
 				akVertex[1].y=fFontEy+fFontHalfWeight+feather;
 				akVertex[2].y=fFontSy+fFontHalfWeight-feather;
@@ -679,12 +730,12 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 				// 20041216.myevan.DrawPrimitiveUP
 				if (CGraphicBase::SetPDTStream((SPDTVertex*)akVertex, 4))
 					STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
-				
+
 				fCurX += fFontAdvance;
 			}
 		}
 
-		// ¸ÞÀÎ ÆùÆ®
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®
 		fCurX=fStanX;
 		fCurY=fStanY;
 		fFontMaxHeight=0.0f;
@@ -698,7 +749,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			fFontMaxHeight=max(fFontHeight, pCurCharInfo->height);
 			fFontAdvance=float(pCurCharInfo->advance);
 
-			// NOTE : ÆùÆ® Ãâ·Â¿¡ Width Á¦ÇÑÀ» µÓ´Ï´Ù. - [levites]
+			// NOTE : ï¿½ï¿½Æ® ï¿½ï¿½Â¿ï¿½ Width ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ó´Ï´ï¿½. - [levites]
 			if ((fCurX+fFontWidth)-m_v3Position.x > m_fLimitWidth)
 			{
 				if (m_isMultiLine)
@@ -790,7 +841,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 		{
 			sx += m_v3Position.x - m_textWidth;
 			ex += m_v3Position.x - m_textWidth;
-			sy += m_v3Position.y;			
+			sy += m_v3Position.y;
 			ey = sy + m_textHeight;
 		}
 		else
@@ -810,10 +861,10 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			case VERTICAL_ALIGN_CENTER:
 				sy -= float(m_textHeight) / 2.0f;
 				break;
-		}		
-		// ÃÖÀûÈ­ »çÇ×
-		// °°ÀºÅØ½ºÃÄ¸¦ »ç¿ëÇÑ´Ù¸é... STRIPÀ» ±¸¼ºÇÏ°í, ÅØ½ºÃÄ°¡ º¯°æµÇ°Å³ª ³¡³ª¸é DrawPrimitive¸¦ È£ÃâÇØ
-		// ÃÖ´ëÇÑ ¼ýÀÚ¸¦ ÁÙÀÌµµ·ÏÇÏÀÚ!
+		}
+		// ï¿½ï¿½ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½Ä¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½... STRIPï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½, ï¿½Ø½ï¿½ï¿½Ä°ï¿½ ï¿½ï¿½ï¿½ï¿½Ç°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ DrawPrimitiveï¿½ï¿½ È£ï¿½ï¿½ï¿½ï¿½
+		// ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!
 
 		TPDTVertex vertices[4];
 		vertices[0].diffuse = diffuse;
@@ -856,7 +907,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			vertices[3].position = TPosition(ex, ey, 0.0f);
 
 			STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLELIST, 0, 4, 2, c_FillRectIndices, D3DFMT_INDEX16, vertices, sizeof(TPDTVertex));
-		}		
+		}
 	}
 
 	STATEMANAGER.RestoreRenderState(D3DRS_SRCBLEND);
@@ -865,13 +916,13 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 	STATEMANAGER.SetRenderState(D3DRS_FOGENABLE, dwFogEnable);
 	STATEMANAGER.SetRenderState(D3DRS_LIGHTING, dwLighting);
 
-	//±Ý°­°æ ¸µÅ© ¶ç¿öÁÖ´Â ºÎºÐ.
+	//ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Îºï¿½.
 	if (m_hyperlinkVector.size() != 0)
 	{
 		int lx = gs_mx - m_v3Position.x;
 		int ly = gs_my - m_v3Position.y;
 
-		//¾Æ¶øÀº ÁÂÇ¥ ºÎÈ£¸¦ ¹Ù²ãÁØ´Ù.
+		//ï¿½Æ¶ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½Ø´ï¿½.
 		if (GetDefaultCodePage() == CP_ARABIC) {
 			lx = -lx;
 			ly = -ly + m_textHeight;
@@ -896,6 +947,19 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			}
 		}
 	}
+
+    if (m_emojiVector.size() != 0)
+    {
+        for (std::vector<SEmoji>::iterator itor = m_emojiVector.begin(); itor != m_emojiVector.end(); ++itor)
+        {
+            SEmoji & rEmo = *itor;
+            if (rEmo.pInstance)
+            {
+                rEmo.pInstance->SetPosition(fStanX + rEmo.x, (fStanY + 7.0) - (rEmo.pInstance->GetHeight() / 2));
+                rEmo.pInstance->Render();
+            }
+        }
+    }
 }
 
 void CGraphicTextInstance::CreateSystem(UINT uCapacity)
@@ -1063,7 +1127,7 @@ WORD CGraphicTextInstance::GetTextLineCount()
 		float fFontAdvance=float(pCurCharInfo->advance);
 		//float fFontHeight=float(pCurCharInfo->height);
 
-		// NOTE : ÆùÆ® Ãâ·Â¿¡ Width Á¦ÇÑÀ» µÓ´Ï´Ù. - [levites]
+		// NOTE : ï¿½ï¿½Æ® ï¿½ï¿½Â¿ï¿½ Width ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ó´Ï´ï¿½. - [levites]
 		if (fx+fFontWidth > m_fLimitWidth)
 		{
 			fx = 0.0f;
@@ -1110,7 +1174,7 @@ void CGraphicTextInstance::__Initialize()
 	m_vAlign = VERTICAL_ALIGN_TOP;
 
 	m_iMax = 0;
-	m_fLimitWidth = 1600.0f; // NOTE : ÇØ»óµµÀÇ ÃÖ´ëÄ¡. ÀÌº¸´Ù ±æ°Ô ¾µ ÀÏÀÌ ÀÖÀ»±î? - [levites]
+	m_fLimitWidth = 1600.0f; // NOTE : ï¿½Ø»ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½Ä¡. ï¿½Ìºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? - [levites]
 
 	m_isCursor = false;
 	m_isSecret = false;
@@ -1132,12 +1196,28 @@ void CGraphicTextInstance::__Initialize()
 void CGraphicTextInstance::Destroy()
 {
 	m_stText="";
+
+	if (m_emojiVector.size() != 0)
+    {
+        for (std::vector<SEmoji>::iterator itor = m_emojiVector.begin(); itor != m_emojiVector.end(); ++itor)
+        {
+            SEmoji & rEmo = *itor;
+            if (rEmo.pInstance)
+            {
+                CGraphicImageInstance::Delete(rEmo.pInstance);
+                rEmo.pInstance = NULL;
+            }
+        }
+    }
+
+    m_emojiVector.clear();
 	m_pCharInfoVector.clear();
 	m_dwColorInfoVector.clear();
 	m_hyperlinkVector.clear();
 
 	__Initialize();
 }
+
 
 CGraphicTextInstance::CGraphicTextInstance()
 {

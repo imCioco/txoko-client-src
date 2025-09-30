@@ -19,7 +19,7 @@ int GetTextTag(const wchar_t * src, int maxLen, int & tagLen, std::wstring & ext
         extraInfo.assign(++cur, 8);
         return TEXT_TAG_COLOR;
     }
-    else if (*cur == L'|') // ||´Â |·Î Ç¥½ÃÇÑ´Ù.
+    else if (*cur == L'|') // ||ï¿½ï¿½ |ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ñ´ï¿½.
     {
         tagLen = 2;
         return TEXT_TAG_TAG;
@@ -29,7 +29,7 @@ int GetTextTag(const wchar_t * src, int maxLen, int & tagLen, std::wstring & ext
         tagLen = 2;
         return TEXT_TAG_RESTORE_COLOR;
     }
-    else if (*cur == L'H') // hyperlink |Hitem:10000:0:0:0:0|h[ÀÌ¸§]|h
+    else if (*cur == L'H') // hyperlink |Hitem:10000:0:0:0:0|h[ï¿½Ì¸ï¿½]|h
     {
         tagLen = 2;
         return TEXT_TAG_HYPERLINK_START;
@@ -38,6 +38,16 @@ int GetTextTag(const wchar_t * src, int maxLen, int & tagLen, std::wstring & ext
     {
         tagLen = 2;
         return TEXT_TAG_HYPERLINK_END;
+    }
+    else if (*cur == L'E') // emoji |Epath/emo|e
+    {
+        tagLen = 2;
+        return TEXT_TAG_EMOJI_START;
+    }
+    else if (*cur == L'e') // end of emoji
+    {
+        tagLen = 2;
+        return TEXT_TAG_EMOJI_END;
     }
 
     return TEXT_TAG_PLAIN;
@@ -66,6 +76,10 @@ std::wstring GetTextTagOutputString(const wchar_t * src, int src_len)
         else if (tag == TEXT_TAG_HYPERLINK_START)
             hyperlinkStep = 1;
         else if (tag == TEXT_TAG_HYPERLINK_END)
+            hyperlinkStep = 0;
+        else if (tag == TEXT_TAG_EMOJI_START)
+            hyperlinkStep = 1;
+        else if (tag == TEXT_TAG_EMOJI_END)
             hyperlinkStep = 0;
 
         i += len;
@@ -114,6 +128,10 @@ int GetTextTagInternalPosFromRenderPos(const wchar_t * src, int src_len, int off
             hyperlinkStep = 1;
         else if (tag == TEXT_TAG_HYPERLINK_END)
             hyperlinkStep = 0;
+        else if (tag == TEXT_TAG_EMOJI_START)
+            hyperlinkStep = 1;
+        else if (tag == TEXT_TAG_EMOJI_END)
+            hyperlinkStep = 0;
 
         i += len;
     }
@@ -141,6 +159,10 @@ int GetTextTagOutputLen(const wchar_t * src, int src_len)
             hyperlinkStep = 1;
         else if (tag == TEXT_TAG_HYPERLINK_END)
             hyperlinkStep = 0;
+        else if (tag == TEXT_TAG_EMOJI_START)
+            hyperlinkStep = 1;
+        else if (tag == TEXT_TAG_EMOJI_END)
+            hyperlinkStep = 0;
 
         i += len;
     }
@@ -154,20 +176,20 @@ int FindColorTagStartPosition(const wchar_t * src, int src_len)
 
     const wchar_t * cur = src;
 
-    // |rÀÇ °æ¿ì
+    // |rï¿½ï¿½ ï¿½ï¿½ï¿½
     if (*cur == L'r' && *(cur - 1) == L'|')
     {
 	    int len = src_len;
 
-        // ||rÀº ¹«½Ã
+        // ||rï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (len >= 2 && *(cur - 2) == L'|')
             return 1;
 
         cur -= 2;
         len -= 2;
 
-        // |c±îÁö Ã£¾Æ¼­ |À§Ä¡±îÁö ¸®ÅÏÇÑ´Ù.
-        while (len > 1) // ÃÖ¼Ò 2ÀÚ¸¦ °Ë»çÇØ¾ß µÈ´Ù.
+        // |cï¿½ï¿½ï¿½ï¿½ Ã£ï¿½Æ¼ï¿½ |ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+        while (len > 1) // ï¿½Ö¼ï¿½ 2ï¿½Ú¸ï¿½ ï¿½Ë»ï¿½ï¿½Ø¾ï¿½ ï¿½È´ï¿½.
         {
             if (*cur == L'c' && *(cur - 1) == L'|')
                 return (src - cur) + 1;
@@ -175,9 +197,9 @@ int FindColorTagStartPosition(const wchar_t * src, int src_len)
             --cur;
             --len;
         }
-        return (src_len); // ¸øÃ£À¸¸é ÀüºÎ;;
+        return (src_len); // ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½;;
     }
-	// ||ÀÇ °æ¿ì
+	// ||ï¿½ï¿½ ï¿½ï¿½ï¿½
 	else if (*cur == L'|' && *(cur - 1) == L'|')
 		return 1;
 

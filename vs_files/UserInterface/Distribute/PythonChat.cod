@@ -3370,7 +3370,7 @@ __$EHRec$ = -12						; size = 12
 
 ; 66   : 				T* pkNewData=new T;
 
-  00032	68 ac 00 00 00	 push	 172			; 000000acH
+  00032	68 b8 00 00 00	 push	 184			; 000000b8H
   00037	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
   0003c	83 c4 04	 add	 esp, 4
   0003f	89 45 f0	 mov	 DWORD PTR $T3[ebp], eax
@@ -3495,7 +3495,7 @@ _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 __unwindfunclet$?New@SChatLine@CPythonChat@@SAPAU12@XZ$0:
-  00000	68 ac 00 00 00	 push	 172			; 000000acH
+  00000	68 b8 00 00 00	 push	 184			; 000000b8H
   00005	8b 45 f0	 mov	 eax, DWORD PTR $T3[ebp]
   00008	50		 push	 eax
   00009	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
@@ -3931,7 +3931,7 @@ ___flags$ = 8						; size = 4
   00006	e8 00 00 00 00	 call	 ??1SChatLine@CPythonChat@@UAE@XZ ; CPythonChat::SChatLine::~SChatLine
   0000b	f6 45 08 01	 test	 BYTE PTR ___flags$[ebp], 1
   0000f	74 0e		 je	 SHORT $LN5@scalar
-  00011	68 ac 00 00 00	 push	 172			; 000000acH
+  00011	68 b8 00 00 00	 push	 184			; 000000b8H
   00016	56		 push	 esi
   00017	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
   0001c	83 c4 08	 add	 esp, 8
@@ -13072,7 +13072,7 @@ __$EHRec$ = -12						; size = 12
 
 ; 66   : 				T* pkNewData=new T;
 
-  00032	6a 70		 push	 112			; 00000070H
+  00032	6a 7c		 push	 124			; 0000007cH
   00034	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
   00039	8b f0		 mov	 esi, eax
   0003b	83 c4 04	 add	 esp, 4
@@ -13213,7 +13213,7 @@ _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 __unwindfunclet$?New@SChatLine@CWhisper@@SAPAU12@XZ$0:
-  00000	6a 70		 push	 112			; 00000070H
+  00000	6a 7c		 push	 124			; 0000007cH
   00002	8b 45 f0	 mov	 eax, DWORD PTR $T3[ebp]
   00005	50		 push	 eax
   00006	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
@@ -13381,7 +13381,7 @@ $LL6@DestroySys:
 
   00049	8b cf		 mov	 ecx, edi
   0004b	e8 00 00 00 00	 call	 ??1CGraphicTextInstance@@UAE@XZ ; CGraphicTextInstance::~CGraphicTextInstance
-  00050	6a 70		 push	 112			; 00000070H
+  00050	6a 7c		 push	 124			; 0000007cH
   00052	57		 push	 edi
   00053	c7 45 fc ff ff
 	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
@@ -17651,7 +17651,7 @@ __$EHRec$ = -12						; size = 12
 
 ; 66   : 				T* pkNewData=new T;
 
-  00032	68 ac 00 00 00	 push	 172			; 000000acH
+  00032	68 b8 00 00 00	 push	 184			; 000000b8H
   00037	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
   0003c	83 c4 04	 add	 esp, 4
   0003f	89 45 f0	 mov	 DWORD PTR $T3[ebp], eax
@@ -17775,7 +17775,7 @@ _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 __unwindfunclet$?Alloc@?$CDynamicPool@USChatLine@CPythonChat@@@@QAEPAUSChatLine@CPythonChat@@XZ$0:
-  00000	68 ac 00 00 00	 push	 172			; 000000acH
+  00000	68 b8 00 00 00	 push	 184			; 000000b8H
   00005	8b 45 f0	 mov	 eax, DWORD PTR $T3[ebp]
   00008	50		 push	 eax
   00009	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
@@ -19433,7 +19433,7 @@ __$EHRec$ = -12						; size = 12
 
 ; 66   : 				T* pkNewData=new T;
 
-  00032	6a 70		 push	 112			; 00000070H
+  00032	6a 7c		 push	 124			; 0000007cH
   00034	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
   00039	8b f0		 mov	 esi, eax
   0003b	83 c4 04	 add	 esp, 4
@@ -19573,7 +19573,7 @@ _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 __unwindfunclet$?Alloc@?$CDynamicPool@USChatLine@CWhisper@@@@QAEPAUSChatLine@CWhisper@@XZ$0:
-  00000	6a 70		 push	 112			; 00000070H
+  00000	6a 7c		 push	 124			; 0000007cH
   00002	8b 45 f0	 mov	 eax, DWORD PTR $T3[ebp]
   00005	50		 push	 eax
   00006	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
@@ -19655,7 +19655,7 @@ $LL4@Destroy:
 
   00049	8b cf		 mov	 ecx, edi
   0004b	e8 00 00 00 00	 call	 ??1CGraphicTextInstance@@UAE@XZ ; CGraphicTextInstance::~CGraphicTextInstance
-  00050	6a 70		 push	 112			; 00000070H
+  00050	6a 7c		 push	 124			; 0000007cH
   00052	57		 push	 edi
   00053	c7 45 fc ff ff
 	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
@@ -27101,7 +27101,7 @@ __$EHRec$ = -12						; size = 12
 
   00035	8b ce		 mov	 ecx, esi
   00037	e8 00 00 00 00	 call	 ??1CGraphicTextInstance@@UAE@XZ ; CGraphicTextInstance::~CGraphicTextInstance
-  0003c	6a 70		 push	 112			; 00000070H
+  0003c	6a 7c		 push	 124			; 0000007cH
   0003e	56		 push	 esi
   0003f	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
   00044	83 c4 08	 add	 esp, 8
@@ -27237,7 +27237,7 @@ ___flags$dead$ = 8					; size = 4
 
   00031	8b ce		 mov	 ecx, esi
   00033	e8 00 00 00 00	 call	 ??1CGraphicTextInstance@@UAE@XZ ; CGraphicTextInstance::~CGraphicTextInstance
-  00038	6a 70		 push	 112			; 00000070H
+  00038	6a 7c		 push	 124			; 0000007cH
   0003a	56		 push	 esi
   0003b	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
   00040	83 c4 08	 add	 esp, 8
