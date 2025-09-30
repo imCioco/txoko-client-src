@@ -1,94 +1,94 @@
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\AccountConnector.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\AccountConnector.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\AffectFlagContainer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\AffectFlagContainer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\CameraProcedure.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\CameraProcedure.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\CheckLatestFiles.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\CheckLatestFiles.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\GameType.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\GameType.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\GuildMarkDownloader.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\GuildMarkDownloader.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\GuildMarkUploader.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\GuildMarkUploader.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\HackShield.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\HackShield.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBase.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBase.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseBattle.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseBattle.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseEffect.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseEffect.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseEvent.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseEvent.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseMotion.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseMotion.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseMovement.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseMovement.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InstanceBaseTransform.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InstanceBaseTransform.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\InsultChecker.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\InsultChecker.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\Locale.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\Locale.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\MarkImage.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\MarkImage.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\MarkManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\MarkManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\MovieMan.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\MovieMan.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\NetworkActorManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\NetworkActorManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\NProtectGameGuard.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\NProtectGameGuard.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\ProcessCRC.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\ProcessCRC.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\ProcessScanner.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\ProcessScanner.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplication.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplication.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationCamera.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationCamera.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationCursor.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationCursor.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationEvent.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationEvent.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationLogo.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationLogo.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationProcedure.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationProcedure.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonApplicationWebPage.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonApplicationWebPage.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonBackground.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonBackground.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonBackgroundModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonBackgroundModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonCharacterManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonCharacterManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonCharacterManagerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonCharacterManagerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonCharacterModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonCharacterModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonChat.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonChat.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonChatModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonChatModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonEffectModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonEffectModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonEventManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonEventManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonEventManagerMoudle.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonEventManagerMoudle.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonExceptionSender.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonExceptionSender.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonExchange.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonExchange.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonExchangeModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonExchangeModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonFlyModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonFlyModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonGameEventManagerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonGameEventManagerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonGuild.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonGuild.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonIME.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonIME.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonIMEModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonIMEModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonItem.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonItem.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonItemModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonItemModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonMessenger.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonMessenger.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonMiniMap.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonMiniMap.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonMiniMapModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonMiniMapModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkDatagram.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkDatagram.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkDatagramModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkDatagramModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStream.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStream.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamCommand.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamCommand.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamEvent.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamEvent.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseGame.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGame.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseGameActor.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGameActor.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseGameItem.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGameItem.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseHandShake.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseHandShake.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseLoading.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseLoading.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseLogin.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseLogin.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseOffline.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseOffline.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNetworkStreamPhaseSelect.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseSelect.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNonPlayer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNonPlayer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonNonPlayerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonNonPlayerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPackModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPackModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerEventHandler.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerEventHandler.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerInput.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerInput.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerInputKeyboard.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerInputKeyboard.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerInputMouse.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerInputMouse.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonPlayerSkill.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonPlayerSkill.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonProfilerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonProfilerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonQuest.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonQuest.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonSafeBox.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonSafeBox.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonShop.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonShop.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonSkill.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonSkill.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonSoundManagerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonSoundManagerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonSystem.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonSystem.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonSystemModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonSystemModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonTextTail.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonTextTail.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\PythonTextTailModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\PythonTextTailModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\ServerStateChecker.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\ServerStateChecker.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\ServerStateCheckerModule.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\ServerStateCheckerModule.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\StdAfx.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\StdAfx.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\UserInterface.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\UserInterface.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\WiseLogicXTrap.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\UserInterface\Distribute\WiseLogicXTrap.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\AccountConnector.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\AccountConnector.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\AffectFlagContainer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\AffectFlagContainer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\CameraProcedure.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\CameraProcedure.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\CheckLatestFiles.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\CheckLatestFiles.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\GameType.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\GameType.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\GuildMarkDownloader.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\GuildMarkDownloader.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\GuildMarkUploader.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\GuildMarkUploader.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\HackShield.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\HackShield.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBase.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBase.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseBattle.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseBattle.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseEffect.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseEffect.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseEvent.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseEvent.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseMotion.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseMotion.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseMovement.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseMovement.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InstanceBaseTransform.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InstanceBaseTransform.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\InsultChecker.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\InsultChecker.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\Locale.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\Locale.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\MarkImage.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\MarkImage.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\MarkManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\MarkManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\MovieMan.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\MovieMan.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\NetworkActorManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\NetworkActorManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\NProtectGameGuard.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\NProtectGameGuard.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\ProcessCRC.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\ProcessCRC.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\ProcessScanner.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\ProcessScanner.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplication.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplication.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationCamera.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationCamera.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationCursor.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationCursor.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationEvent.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationEvent.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationLogo.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationLogo.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationProcedure.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationProcedure.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonApplicationWebPage.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonApplicationWebPage.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonBackground.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonBackground.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonBackgroundModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonBackgroundModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonCharacterManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonCharacterManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonCharacterManagerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonCharacterManagerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonCharacterModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonCharacterModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonChat.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonChat.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonChatModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonChatModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonEffectModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonEffectModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonEventManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonEventManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonEventManagerMoudle.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonEventManagerMoudle.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonExceptionSender.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonExceptionSender.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonExchange.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonExchange.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonExchangeModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonExchangeModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonFlyModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonFlyModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonGameEventManagerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonGameEventManagerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonGuild.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonGuild.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonIME.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonIME.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonIMEModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonIMEModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonItem.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonItem.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonItemModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonItemModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonMessenger.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonMessenger.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonMiniMap.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonMiniMap.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonMiniMapModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonMiniMapModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkDatagram.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkDatagram.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkDatagramModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkDatagramModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStream.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStream.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamCommand.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamCommand.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamEvent.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamEvent.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseGame.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGame.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseGameActor.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGameActor.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseGameItem.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseGameItem.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseHandShake.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseHandShake.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseLoading.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseLoading.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseLogin.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseLogin.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseOffline.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseOffline.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNetworkStreamPhaseSelect.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNetworkStreamPhaseSelect.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNonPlayer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNonPlayer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonNonPlayerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonNonPlayerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPackModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPackModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerEventHandler.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerEventHandler.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerInput.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerInput.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerInputKeyboard.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerInputKeyboard.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerInputMouse.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerInputMouse.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonPlayerSkill.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonPlayerSkill.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonProfilerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonProfilerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonQuest.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonQuest.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonSafeBox.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonSafeBox.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonShop.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonShop.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonSkill.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonSkill.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonSoundManagerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonSoundManagerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonSystem.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonSystem.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonSystemModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonSystemModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonTextTail.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonTextTail.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\PythonTextTailModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\PythonTextTailModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\ServerStateChecker.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\ServerStateChecker.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\ServerStateCheckerModule.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\ServerStateCheckerModule.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\StdAfx.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\StdAfx.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\UserInterface.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\UserInterface.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\WiseLogicXTrap.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\UserInterface\Distribute\WiseLogicXTrap.obj

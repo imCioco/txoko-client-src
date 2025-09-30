@@ -1,1 +1,2 @@
 D:\_m2work\Server Client TMP4\ClientVS22\vs_files\CWebBrowser\Distribute\CWebBrowser.lib
+D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\CWebBrowser\Distribute\CWebBrowser.lib

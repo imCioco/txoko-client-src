@@ -1,71 +1,71 @@
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\AttributeData.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\AttributeData.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\AttributeInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\AttributeInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\BlockTexture.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\BlockTexture.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Camera.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Camera.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\CollisionData.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\CollisionData.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\ColorTransitionHelper.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\ColorTransitionHelper.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\CullingManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\CullingManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Decal.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Decal.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\DibBar.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\DibBar.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\EnvironmentMap.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\EnvironmentMap.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\FileLoaderThread.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\FileLoaderThread.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpBase.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpBase.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpCollisionObject.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpCollisionObject.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpColor.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpColor.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpColorInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpColorInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpD3DXBuffer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpD3DXBuffer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpDetector.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpDetector.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpDevice.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpDevice.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpDIB.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpDIB.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpExpandedImageInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpExpandedImageInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpFontTexture.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpFontTexture.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpImage.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpImage.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpImageInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpImageInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpImageTexture.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpImageTexture.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpIndexBuffer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpIndexBuffer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpLightManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpLightManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpMarkInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpMarkInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpMath.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpMath.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpObjectInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpObjectInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpPixelShader.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpPixelShader.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpRatioInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpRatioInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpScreen.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpScreen.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpShadowTexture.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpShadowTexture.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpSubImage.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpSubImage.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpText.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpText.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpTextInstance.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpTextInstance.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpTexture.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpTexture.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpVertexBuffer.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpVertexBuffer.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpVertexBufferDynamic.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpVertexBufferDynamic.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpVertexBufferStatic.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpVertexBufferStatic.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\GrpVertexShader.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\GrpVertexShader.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\IME.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\IME.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Input.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Input.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\JpegFile.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\JpegFile.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\LensFlare.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\LensFlare.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\lineintersect_utils.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\lineintersect_utils.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\MSApplication.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\MSApplication.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\MSWindow.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\MSWindow.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Mutex.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Mutex.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetAddress.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetAddress.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetDatagram.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetDatagram.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetDatagramReceiver.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetDatagramReceiver.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetDatagramSender.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetDatagramSender.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetDevice.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetDevice.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetPacketHeaderMap.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetPacketHeaderMap.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\NetStream.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\NetStream.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\parser.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\parser.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\PathStack.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\PathStack.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\ReferenceObject.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\ReferenceObject.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Resource.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Resource.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\ResourceManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\ResourceManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\ScreenFilter.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\ScreenFilter.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\SkyBox.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\SkyBox.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\StateManager.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\StateManager.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\StdAfx.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\StdAfx.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\TargaResource.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\TargaResource.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\TextBar.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\TextBar.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\TextFileLoader.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\TextFileLoader.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\TextTag.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\TextTag.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Thread.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Thread.obj
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterLib\Util.cpp;D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterLib\Distribute\Util.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\AttributeData.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\AttributeData.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\AttributeInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\AttributeInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\BlockTexture.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\BlockTexture.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Camera.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Camera.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\CollisionData.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\CollisionData.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\ColorTransitionHelper.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\ColorTransitionHelper.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\CullingManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\CullingManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Decal.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Decal.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\DibBar.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\DibBar.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\EnvironmentMap.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\EnvironmentMap.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\FileLoaderThread.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\FileLoaderThread.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpBase.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpBase.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpCollisionObject.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpCollisionObject.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpColor.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpColor.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpColorInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpColorInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpD3DXBuffer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpD3DXBuffer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpDetector.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpDetector.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpDevice.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpDevice.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpDIB.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpDIB.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpExpandedImageInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpExpandedImageInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpFontTexture.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpFontTexture.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpImage.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpImage.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpImageInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpImageInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpImageTexture.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpImageTexture.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpIndexBuffer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpIndexBuffer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpLightManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpLightManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpMarkInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpMarkInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpMath.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpMath.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpObjectInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpObjectInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpPixelShader.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpPixelShader.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpRatioInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpRatioInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpScreen.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpScreen.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpShadowTexture.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpShadowTexture.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpSubImage.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpSubImage.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpText.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpText.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpTextInstance.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpTextInstance.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpTexture.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpTexture.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpVertexBuffer.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpVertexBuffer.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpVertexBufferDynamic.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpVertexBufferDynamic.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpVertexBufferStatic.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpVertexBufferStatic.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\GrpVertexShader.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\GrpVertexShader.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\IME.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\IME.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Input.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Input.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\JpegFile.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\JpegFile.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\LensFlare.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\LensFlare.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\lineintersect_utils.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\lineintersect_utils.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\MSApplication.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\MSApplication.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\MSWindow.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\MSWindow.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Mutex.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Mutex.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetAddress.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetAddress.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetDatagram.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetDatagram.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetDatagramReceiver.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetDatagramReceiver.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetDatagramSender.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetDatagramSender.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetDevice.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetDevice.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetPacketHeaderMap.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetPacketHeaderMap.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\NetStream.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\NetStream.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\parser.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\parser.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\PathStack.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\PathStack.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\ReferenceObject.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\ReferenceObject.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Resource.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Resource.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\ResourceManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\ResourceManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\ScreenFilter.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\ScreenFilter.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\SkyBox.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\SkyBox.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\StateManager.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\StateManager.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\StdAfx.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\StdAfx.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\TargaResource.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\TargaResource.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\TextBar.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\TextBar.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\TextFileLoader.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\TextFileLoader.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\TextTag.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\TextTag.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Thread.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Thread.obj
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterLib\Util.cpp;D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterLib\Distribute\Util.obj

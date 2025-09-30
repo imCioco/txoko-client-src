@@ -4,4 +4,4 @@
   dllmain.cpp
   rpc_connection.cpp
   serialization.cpp
-  Discord.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\extern\library\Discord_r.lib
+  Discord.vcxproj -> D:\_m2work\txoko-m2-work\txoko-client-src\extern\library\Discord_r.lib

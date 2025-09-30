@@ -18,13 +18,13 @@
   Locale.cpp
   MarkImage.cpp
   MarkManager.cpp
-D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\MarkManager.cpp(101,78): warning C4834: discarding return value of function with [[nodiscard]] attribute
+D:\_m2work\txoko-m2-work\txoko-client-src\source\UserInterface\MarkManager.cpp(101,78): warning C4834: discarding return value of function with [[nodiscard]] attribute
   (compiling source file '/source/UserInterface/MarkManager.cpp')
   
   MovieMan.cpp
   Compiling...
-  NetworkActorManager.cpp
   NProtectGameGuard.cpp
+  NetworkActorManager.cpp
   ProcessCRC.cpp
   ProcessScanner.cpp
   PythonApplication.cpp
@@ -101,4 +101,4 @@ D:\_m2work\Server Client TMP4\ClientVS22\source\UserInterface\MarkManager.cpp(10
   WiseLogicXTrap.cpp
   Generating code
   Finished generating code
-  UserInterface.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\binary\Metin2Distribute.exe
+  UserInterface.vcxproj -> D:\_m2work\txoko-m2-work\txoko-client-src\binary\Metin2Distribute.exe

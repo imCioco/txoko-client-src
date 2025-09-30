@@ -6,11 +6,11 @@
   error.cpp
   FileBase.cpp
   FileDir.cpp
-D:\_m2work\Server Client TMP4\ClientVS22\source\EterBase\error.cpp(59,23): warning C4477: 'fprintf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'time_t'
+D:\_m2work\txoko-m2-work\txoko-client-src\source\EterBase\error.cpp(59,23): warning C4477: 'fprintf' : format string '%08x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'time_t'
   (compiling source file '/source/EterBase/error.cpp')
-      D:\_m2work\Server Client TMP4\ClientVS22\source\EterBase\error.cpp(59,23):
+      D:\_m2work\txoko-m2-work\txoko-client-src\source\EterBase\error.cpp(59,23):
       consider using '%llx' in the format string
-      D:\_m2work\Server Client TMP4\ClientVS22\source\EterBase\error.cpp(59,23):
+      D:\_m2work\txoko-m2-work\txoko-client-src\source\EterBase\error.cpp(59,23):
       consider using '%I64x' in the format string
   
   FileLoader.cpp
@@ -27,4 +27,4 @@ D:\_m2work\Server Client TMP4\ClientVS22\source\EterBase\error.cpp(59,23): warni
   Timer.cpp
   Utils.cpp
   Generating Code...
-  EterBase.vcxproj -> D:\_m2work\Server Client TMP4\ClientVS22\vs_files\EterBase\Distribute\EterBase.lib
+  EterBase.vcxproj -> D:\_m2work\txoko-m2-work\txoko-client-src\vs_files\EterBase\Distribute\EterBase.lib
